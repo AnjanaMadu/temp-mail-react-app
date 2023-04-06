@@ -16,7 +16,6 @@ interface eMail {
   attachments: any[];
 }
 
-
 const Table = ({ mail }: TableProps) => {
   const [showModal, setShowModal] = useState(false);
   const [modalTxt, setModalTxt] = useState("Loading...");
@@ -108,7 +107,12 @@ const Table = ({ mail }: TableProps) => {
               onClick={() => setShowModal(false)}
             ></button>
           </header>
-          <section className="modal-card-body">{modalTxt}</section>
+          <section className="modal-card-body">
+            <iframe
+              srcDoc={modalTxt}
+              style={{ width: "100%", height: "100%" }}
+            ></iframe>
+          </section>
           <footer className="modal-card-foot">
             <button className="button" onClick={() => setShowModal(false)}>
               Close
