@@ -41,3 +41,7 @@ To get started with the Temp Mail App, follow these steps:
     This will start the server and make the app accessible at `http://localhost:3000`.
     
 That's it! You should now be able to use the Temp Mail App to generate temporary email addresses.
+
+# Screenshots
+
+![Screenshot](./Screenshot.jpg)
