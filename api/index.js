@@ -1,8 +1,6 @@
 import express from 'express';
 const app = express();
 
-app.use('/', express.static('dist'));
-
 app.get('/api/new', async (req, res) => {
     const resp = await fetch('https://api.internal.temp-mail.io/api/v3/email/new', {
         method: 'POST',
