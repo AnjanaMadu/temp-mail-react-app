@@ -31,7 +31,3 @@ app.get('/api/message', async (req, res) => {
     const out = await resp.json();
     res.send(out.body_html || out.body_text);
 })
-
-app.listen(3000, () => {
-    console.log('Server started on port 3000');
-})
