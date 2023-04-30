@@ -1,5 +1,4 @@
-import express from 'express';
-const app = express();
+const app = require('express')();
 
 app.get('/api/new', async (req, res) => {
     const resp = await fetch('https://api.internal.temp-mail.io/api/v3/email/new', {
